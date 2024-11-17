@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire de contact et sources</title>
+    <link rel="stylesheet" href="../CSS/MesStyles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../pagehtml/acceuil.html">Accueil</a></li>
+            <li><a href="../pagehtml/centreinteret.html">Mes centres d'intérêts</a></li>
+            <li><a href="../pagehtml/projetpro.html">Mon projet professionnel</a></li>
+        </ul>
+    </nav>
+
+    <!-- Début du wrapper pour centrer le contenu -->
+    <div class="wrapper">
+        <main>
+            <section id="contact">
+                <h2>Formulaire de contact</h2>
+                <p>Pour me contacter, veuillez saisir les informations demandées ci-dessous.</p>
+
+                <form action="https://formspree.io/f/movqvypj" method="POST">
+                    <label for="email">Votre email :</label>
+                    <input type="email" name="email" id="email" required>
+                    <br><br>
+
+                    <label for="message">Votre message :</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+                    <br><br>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+
+            <section id="sources">
+                <h2>Mes Sources</h2>
+                <p>
+                    Afin de construire ce site Web, j'ai utilisé les informations disponibles sur le site
+                    <a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a> ainsi que le
+                    <a href="../document/cours3-css.pdf" target="_blank">cours CSS</a> de Mme Parkin.
+                </p>
+
+                <p>
+                    Je me suis également servi des documents LaTeX réalisés avec M. Jeanneret :
+                    <ul>
+                        <li><a href="../bureautique/guillonlubineau_DM2024.pdf">Document représentant mon site web en PDF</a></li>
+                    </ul>
+                </p>
+            </section>
+        </main>
+    </div>
+    <!-- Fin du wrapper -->
+
+    <footer>
+        <p>&copy; 2024 Armand Guillon Lubineau. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
